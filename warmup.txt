@@ -1,0 +1,9 @@
+What is a pointer? When might we see one when working with JavaScript arrays?
+-A pointer references an object in memory but is not the object itself.
+How can we use square bracket notation to isolate a single element in an array? What does this notation look like?
+- var abc = ['a', 'b', 'c',];
+abc[0] ('a')
+What is the difference between pop() and push()?
+-pop() method removes the last item from the array and returns it. push() method adds an element to the end of an array.
+What types of objects can be placed into a JavaScript array?
+-most objects including nested arrays
