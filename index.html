@@ -3,8 +3,8 @@
   <head>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
-    <scripts src="js/jquery-3.3.1.js"></scripts>
-    <scripts src="js/scripts.js"></scripts>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
     <meta charset="utf-8">
     <title>Favorite Things Webpage</title>
   </head>
@@ -15,22 +15,33 @@
           <h1>The favorite things list</h1>
         </div>
       </div> <!-- heading -->
-      <div class="row" id='form'> <!-- forms -->
+      <div class="row" id='formInput'> <!-- forms -->
         <div class="col-md-4">
           <!-- stuff -->
           <p>pick your favorite things</p>
         </div>
         <div class="col-md-4">
           <form id="favoriteForm">
-            <input id="nameInput" type="text" class="form-control" placeholder="name" />
-            <input type="text" class="form-control" placeholder="food" />
-            <input type="text" class="form-control" placeholder="places" />
-            <input type="text" class="form-control" placeholder="animals" />
+            <label>
+              <input id="nameInput" type="text" class="form-control" placeholder="name" />
+            </label>
+            <label>
+              <input type="text" name="food" id="food"class="form-control" placeholder="food" />
+          </label>
+          <label>
+            <input type="text" class="form-control" name="places" placeholder="places" id="places" />
+          </label>
+          <label>
+            <input type="text" class="form-control" name="animals" placeholder="animals" id="animals"/>
+          </label>
             <button class="btn btn-primary" type="submit">Submit</button>
           </form>
         </div>
         <div class="col-md-4">
-          <!-- stuff -->
+          <h3><span id="returnArray"></span></h3>
+          <ul>
+            
+          </ul>
         </div>
       </div>
     </div>
